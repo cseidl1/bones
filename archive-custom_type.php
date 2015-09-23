@@ -30,7 +30,7 @@
 
 									<h3 class="h2"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
 									<p class="byline vcard"><?php
-										printf( __( 'Posted <time class="updated" datetime="%1$s" itemprop="datePublished">%2$s</time> by <span class="author">%3$s</span>', 'comradetheme' ), get_the_time( 'Y-m-j' ), get_the_time( __( 'F jS, Y', 'comradetheme' ) ), get_author_posts_url( get_the_author_meta( 'ID' ) ));
+										printf( __( 'Posted <time class="updated" datetime="%1$s" itemprop="datePublished">%2$s</time> by <span class="author">%3$s</span>', 'solidaritytheme' ), get_the_time( 'Y-m-j' ), get_the_time( __( 'F jS, Y', 'solidaritytheme' ) ), get_author_posts_url( get_the_author_meta( 'ID' ) ));
 									?></p>
 
 								</header>
@@ -49,19 +49,19 @@
 
 							<?php endwhile; ?>
 
-									<?php comrade_page_navi(); ?>
+									<?php solidarity_page_navi(); ?>
 
 							<?php else : ?>
 
 									<article id="post-not-found" class="hentry cf">
 										<header class="article-header">
-											<h1><?php _e( 'Oops, Post Not Found!', 'comradetheme' ); ?></h1>
+											<h1><?php _e( 'Oops, Post Not Found!', 'solidaritytheme' ); ?></h1>
 										</header>
 										<section class="entry-content">
-											<p><?php _e( 'Uh Oh. Something is missing. Try double checking things.', 'comradetheme' ); ?></p>
+											<p><?php _e( 'Uh Oh. Something is missing. Try double checking things.', 'solidaritytheme' ); ?></p>
 										</section>
 										<footer class="article-footer">
-												<p><?php _e( 'This is the error message in the custom posty type archive template.', 'comradetheme' ); ?></p>
+												<p><?php _e( 'This is the error message in the custom posty type archive template.', 'solidaritytheme' ); ?></p>
 										</footer>
 									</article>
 

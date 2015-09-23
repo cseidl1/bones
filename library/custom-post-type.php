@@ -1,5 +1,5 @@
 <?php
-/* Comrade Custom Post Type Example
+/* Solidarity Custom Post Type Example
 This page walks you through creating 
 a custom post type and taxonomies. You
 can edit this one or copy the following code 
@@ -11,14 +11,14 @@ and change things if they are concentrated
 in their own file.
 
 Developed by: Eddie Machado
-URL: http://themble.com/comrade/
+URL: http://themble.com/solidarity/
 */
 
 // Flush rewrite rules for custom post types
-add_action( 'after_switch_theme', 'comrade_flush_rewrite_rules' );
+add_action( 'after_switch_theme', 'solidarity_flush_rewrite_rules' );
 
 // Flush your rewrite rules
-function comrade_flush_rewrite_rules() {
+function solidarity_flush_rewrite_rules() {
 	flush_rewrite_rules();
 }
 
@@ -28,21 +28,21 @@ function custom_post_example() {
 	register_post_type( 'custom_type', /* (http://codex.wordpress.org/Function_Reference/register_post_type) */
 		// let's now add all the options for this post type
 		array( 'labels' => array(
-			'name' => __( 'Custom Types', 'comradetheme' ), /* This is the Title of the Group */
-			'singular_name' => __( 'Custom Post', 'comradetheme' ), /* This is the individual type */
-			'all_items' => __( 'All Custom Posts', 'comradetheme' ), /* the all items menu item */
-			'add_new' => __( 'Add New', 'comradetheme' ), /* The add new menu item */
-			'add_new_item' => __( 'Add New Custom Type', 'comradetheme' ), /* Add New Display Title */
-			'edit' => __( 'Edit', 'comradetheme' ), /* Edit Dialog */
-			'edit_item' => __( 'Edit Post Types', 'comradetheme' ), /* Edit Display Title */
-			'new_item' => __( 'New Post Type', 'comradetheme' ), /* New Display Title */
-			'view_item' => __( 'View Post Type', 'comradetheme' ), /* View Display Title */
-			'search_items' => __( 'Search Post Type', 'comradetheme' ), /* Search Custom Type Title */ 
-			'not_found' =>  __( 'Nothing found in the Database.', 'comradetheme' ), /* This displays if there are no entries yet */ 
-			'not_found_in_trash' => __( 'Nothing found in Trash', 'comradetheme' ), /* This displays if there is nothing in the trash */
+			'name' => __( 'Custom Types', 'solidaritytheme' ), /* This is the Title of the Group */
+			'singular_name' => __( 'Custom Post', 'solidaritytheme' ), /* This is the individual type */
+			'all_items' => __( 'All Custom Posts', 'solidaritytheme' ), /* the all items menu item */
+			'add_new' => __( 'Add New', 'solidaritytheme' ), /* The add new menu item */
+			'add_new_item' => __( 'Add New Custom Type', 'solidaritytheme' ), /* Add New Display Title */
+			'edit' => __( 'Edit', 'solidaritytheme' ), /* Edit Dialog */
+			'edit_item' => __( 'Edit Post Types', 'solidaritytheme' ), /* Edit Display Title */
+			'new_item' => __( 'New Post Type', 'solidaritytheme' ), /* New Display Title */
+			'view_item' => __( 'View Post Type', 'solidaritytheme' ), /* View Display Title */
+			'search_items' => __( 'Search Post Type', 'solidaritytheme' ), /* Search Custom Type Title */ 
+			'not_found' =>  __( 'Nothing found in the Database.', 'solidaritytheme' ), /* This displays if there are no entries yet */ 
+			'not_found_in_trash' => __( 'Nothing found in Trash', 'solidaritytheme' ), /* This displays if there is nothing in the trash */
 			'parent_item_colon' => ''
 			), /* end of arrays */
-			'description' => __( 'This is the example custom post type', 'comradetheme' ), /* Custom Type Description */
+			'description' => __( 'This is the example custom post type', 'solidaritytheme' ), /* Custom Type Description */
 			'public' => true,
 			'publicly_queryable' => true,
 			'exclude_from_search' => false,
@@ -79,16 +79,16 @@ function custom_post_example() {
 		array('custom_type'), /* if you change the name of register_post_type( 'custom_type', then you have to change this */
 		array('hierarchical' => true,     /* if this is true, it acts like categories */
 			'labels' => array(
-				'name' => __( 'Custom Categories', 'comradetheme' ), /* name of the custom taxonomy */
-				'singular_name' => __( 'Custom Category', 'comradetheme' ), /* single taxonomy name */
-				'search_items' =>  __( 'Search Custom Categories', 'comradetheme' ), /* search title for taxomony */
-				'all_items' => __( 'All Custom Categories', 'comradetheme' ), /* all title for taxonomies */
-				'parent_item' => __( 'Parent Custom Category', 'comradetheme' ), /* parent title for taxonomy */
-				'parent_item_colon' => __( 'Parent Custom Category:', 'comradetheme' ), /* parent taxonomy title */
-				'edit_item' => __( 'Edit Custom Category', 'comradetheme' ), /* edit custom taxonomy title */
-				'update_item' => __( 'Update Custom Category', 'comradetheme' ), /* update title for taxonomy */
-				'add_new_item' => __( 'Add New Custom Category', 'comradetheme' ), /* add new title for taxonomy */
-				'new_item_name' => __( 'New Custom Category Name', 'comradetheme' ) /* name title for taxonomy */
+				'name' => __( 'Custom Categories', 'solidaritytheme' ), /* name of the custom taxonomy */
+				'singular_name' => __( 'Custom Category', 'solidaritytheme' ), /* single taxonomy name */
+				'search_items' =>  __( 'Search Custom Categories', 'solidaritytheme' ), /* search title for taxomony */
+				'all_items' => __( 'All Custom Categories', 'solidaritytheme' ), /* all title for taxonomies */
+				'parent_item' => __( 'Parent Custom Category', 'solidaritytheme' ), /* parent title for taxonomy */
+				'parent_item_colon' => __( 'Parent Custom Category:', 'solidaritytheme' ), /* parent taxonomy title */
+				'edit_item' => __( 'Edit Custom Category', 'solidaritytheme' ), /* edit custom taxonomy title */
+				'update_item' => __( 'Update Custom Category', 'solidaritytheme' ), /* update title for taxonomy */
+				'add_new_item' => __( 'Add New Custom Category', 'solidaritytheme' ), /* add new title for taxonomy */
+				'new_item_name' => __( 'New Custom Category Name', 'solidaritytheme' ) /* name title for taxonomy */
 			),
 			'show_admin_column' => true, 
 			'show_ui' => true,
@@ -102,16 +102,16 @@ function custom_post_example() {
 		array('custom_type'), /* if you change the name of register_post_type( 'custom_type', then you have to change this */
 		array('hierarchical' => false,    /* if this is false, it acts like tags */
 			'labels' => array(
-				'name' => __( 'Custom Tags', 'comradetheme' ), /* name of the custom taxonomy */
-				'singular_name' => __( 'Custom Tag', 'comradetheme' ), /* single taxonomy name */
-				'search_items' =>  __( 'Search Custom Tags', 'comradetheme' ), /* search title for taxomony */
-				'all_items' => __( 'All Custom Tags', 'comradetheme' ), /* all title for taxonomies */
-				'parent_item' => __( 'Parent Custom Tag', 'comradetheme' ), /* parent title for taxonomy */
-				'parent_item_colon' => __( 'Parent Custom Tag:', 'comradetheme' ), /* parent taxonomy title */
-				'edit_item' => __( 'Edit Custom Tag', 'comradetheme' ), /* edit custom taxonomy title */
-				'update_item' => __( 'Update Custom Tag', 'comradetheme' ), /* update title for taxonomy */
-				'add_new_item' => __( 'Add New Custom Tag', 'comradetheme' ), /* add new title for taxonomy */
-				'new_item_name' => __( 'New Custom Tag Name', 'comradetheme' ) /* name title for taxonomy */
+				'name' => __( 'Custom Tags', 'solidaritytheme' ), /* name of the custom taxonomy */
+				'singular_name' => __( 'Custom Tag', 'solidaritytheme' ), /* single taxonomy name */
+				'search_items' =>  __( 'Search Custom Tags', 'solidaritytheme' ), /* search title for taxomony */
+				'all_items' => __( 'All Custom Tags', 'solidaritytheme' ), /* all title for taxonomies */
+				'parent_item' => __( 'Parent Custom Tag', 'solidaritytheme' ), /* parent title for taxonomy */
+				'parent_item_colon' => __( 'Parent Custom Tag:', 'solidaritytheme' ), /* parent taxonomy title */
+				'edit_item' => __( 'Edit Custom Tag', 'solidaritytheme' ), /* edit custom taxonomy title */
+				'update_item' => __( 'Update Custom Tag', 'solidaritytheme' ), /* update title for taxonomy */
+				'add_new_item' => __( 'Add New Custom Tag', 'solidaritytheme' ), /* add new title for taxonomy */
+				'new_item_name' => __( 'New Custom Tag Name', 'solidaritytheme' ) /* name title for taxonomy */
 			),
 			'show_admin_column' => true,
 			'show_ui' => true,

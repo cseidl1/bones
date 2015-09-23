@@ -7,7 +7,7 @@ It's turned off by default, but you can call it
 via the functions file.
 
 Developed by: Eddie Machado
-URL: http://themble.com/comrade/
+URL: http://themble.com/solidarity/
 
 Special Thanks for code & inspiration to:
 @jackmcconnell - http://www.voltronik.co.uk/
@@ -47,7 +47,7 @@ function disable_default_dashboard_widgets() {
 	have more plugin widgets you'd like to remove?
 	share them with us so we can get a list of
 	the most commonly used. :D
-	https://github.com/eddiemachado/comrade/issues
+	https://github.com/eddiemachado/solidarity/issues
 	*/
 }
 
@@ -63,7 +63,7 @@ http://digwp.com/2010/10/customize-wordpress-dashboard/
 */
 
 // RSS Dashboard Widget
-function comrade_rss_dashboard_widget() {
+function solidarity_rss_dashboard_widget() {
 	if ( function_exists( 'fetch_feed' ) ) {
 		// include_once( ABSPATH . WPINC . '/feed.php' );               // include the required file
 		$feed = fetch_feed( 'http://feeds.feedburner.com/wpcandy' );        // specify the source feed
@@ -79,7 +79,7 @@ function comrade_rss_dashboard_widget() {
 	else foreach ($items as $item) { ?>
 
 	<h4 style="margin-bottom: 0;">
-		<a href="<?php echo $item->get_permalink(); ?>" title="<?php echo mysql2date( __( 'j F Y @ g:i a', 'comradetheme' ), $item->get_date( 'Y-m-d H:i:s' ) ); ?>" target="_blank">
+		<a href="<?php echo $item->get_permalink(); ?>" title="<?php echo mysql2date( __( 'j F Y @ g:i a', 'solidaritytheme' ), $item->get_date( 'Y-m-d H:i:s' ) ); ?>" target="_blank">
 			<?php echo $item->get_title(); ?>
 		</a>
 	</h4>
@@ -90,8 +90,8 @@ function comrade_rss_dashboard_widget() {
 }
 
 // calling all custom dashboard widgets
-function comrade_custom_dashboard_widgets() {
-	wp_add_dashboard_widget( 'comrade_rss_dashboard_widget', __( 'Recently on Themble (Customize on admin.php)', 'comradetheme' ), 'comrade_rss_dashboard_widget' );
+function solidarity_custom_dashboard_widgets() {
+	wp_add_dashboard_widget( 'solidarity_rss_dashboard_widget', __( 'Recently on Themble (Customize on admin.php)', 'solidaritytheme' ), 'solidarity_rss_dashboard_widget' );
 	/*
 	Be sure to drop any other created Dashboard Widgets
 	in this function and they will all load.
@@ -102,7 +102,7 @@ function comrade_custom_dashboard_widgets() {
 // removing the dashboard widgets
 add_action( 'wp_dashboard_setup', 'disable_default_dashboard_widgets' );
 // adding any custom widgets
-add_action( 'wp_dashboard_setup', 'comrade_custom_dashboard_widgets' );
+add_action( 'wp_dashboard_setup', 'solidarity_custom_dashboard_widgets' );
 
 
 /************* CUSTOM LOGIN PAGE *****************/
@@ -111,20 +111,20 @@ add_action( 'wp_dashboard_setup', 'comrade_custom_dashboard_widgets' );
 
 //Updated to proper 'enqueue' method
 //http://codex.wordpress.org/Plugin_API/Action_Reference/login_enqueue_scripts
-function comrade_login_css() {
-	wp_enqueue_style( 'comrade_login_css', get_template_directory_uri() . '/library/css/login.css', false );
+function solidarity_login_css() {
+	wp_enqueue_style( 'solidarity_login_css', get_template_directory_uri() . '/library/css/login.css', false );
 }
 
 // changing the logo link from wordpress.org to your site
-function comrade_login_url() {  return home_url(); }
+function solidarity_login_url() {  return home_url(); }
 
 // changing the alt text on the logo to show your site name
-function comrade_login_title() { return get_option( 'blogname' ); }
+function solidarity_login_title() { return get_option( 'blogname' ); }
 
 // calling it only on the login page
-add_action( 'login_enqueue_scripts', 'comrade_login_css', 10 );
-add_filter( 'login_headerurl', 'comrade_login_url' );
-add_filter( 'login_headertitle', 'comrade_login_title' );
+add_action( 'login_enqueue_scripts', 'solidarity_login_css', 10 );
+add_filter( 'login_headerurl', 'solidarity_login_url' );
+add_filter( 'login_headertitle', 'solidarity_login_title' );
 
 
 /************* CUSTOMIZE ADMIN *******************/
@@ -137,11 +137,11 @@ you like.
 */
 
 // Custom Backend Footer
-function comrade_custom_admin_footer() {
-	_e( '<span id="footer-thankyou">Developed by <a href="http://websemiotics.com" target="_blank">Web Semiotics</a></span>.', 'comradetheme' );
+function solidarity_custom_admin_footer() {
+	_e( '<span id="footer-thankyou">Developed by <a href="http://websemiotics.com" target="_blank">Web Semiotics</a></span>.', 'solidaritytheme' );
 }
 
 // adding it to the admin area
-add_filter( 'admin_footer_text', 'comrade_custom_admin_footer' );
+add_filter( 'admin_footer_text', 'solidarity_custom_admin_footer' );
 
 ?>

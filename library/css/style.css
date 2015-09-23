@@ -1,4 +1,4 @@
-/*! Made with Comrade: http://themble.com/comrade :) */
+/*! Made with Solidarity: http://themble.com/solidarity :) */
 /******************************************************************
 Site Name:
 Author:
@@ -502,7 +502,7 @@ https://github.com/devinhunt/typebase.css
 I've edited it a bit, but it's a nice starting point.
 */
 /*
- i imported this one in the functions file so comrade would look sweet.
+ i imported this one in the functions file so solidarity would look sweet.
  don't forget to remove it for your site.
 */
 /*
@@ -1578,7 +1578,7 @@ PAGE NAVI STYLES
       background-color: white;
       color: #5c6b80; }
 
-/* end .comrade_page_navi */
+/* end .solidarity_page_navi */
 /* fallback previous & next links */
 .wp-prev-next .prev-link {
   float: left; }

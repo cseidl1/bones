@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: wp theme comrade\n"
+"Project-Id-Version: wp theme solidarity\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-03-02 22:11+0100\n"
 "PO-Revision-Date: \n"
@@ -11,11 +11,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-SourceCharset: utf-8\n"
 "X-Poedit-KeywordsList: __;_e;_n\n"
-"X-Poedit-Basepath: /home/fulgor/GIT/comrade\n"
+"X-Poedit-Basepath: /home/fulgor/GIT/solidarity\n"
 "Last-Translator: \n"
 "X-Generator: Poedit 1.7.4\n"
 "Language: da_DK\n"
-"X-Poedit-SearchPath-0: /home/fulgor/GIT/comrade\n"
+"X-Poedit-SearchPath-0: /home/fulgor/GIT/solidarity\n"
 
 #: comments.php:12
 msgid "This post is password protected. Enter the password to view comments."
@@ -243,7 +243,7 @@ msgstr "Beklager, men det søgte emne blev ikke fundet på denne side."
 msgid "Please activate some Widgets."
 msgstr "Aktiver venligst nogle Widgets."
 
-#: library/comrade.php:52
+#: library/solidarity.php:52
 msgid "Read more &raquo;"
 msgstr "Læs mere &raquo;"
 

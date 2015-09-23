@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: wp theme comrade\n"
+"Project-Id-Version: wp theme solidarity\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-09-02 15:22+0100\n"
 "PO-Revision-Date: \n"
@@ -255,7 +255,7 @@ msgstr "Dit is de foutmelding in het page.php sjabloon."
 msgid "Search Results for:"
 msgstr "Zoekresultaten voor:"
 
-#: ../../search.php:24 ../../library/comrade.php:350
+#: ../../search.php:24 ../../library/solidarity.php:350
 msgid "Read more &raquo;"
 msgstr "Lees meer &raquo;"
 
@@ -318,29 +318,29 @@ msgstr "Onlangs op Themble (Pas aan in admin.php)"
 msgid ""
 "<span id=\"footer-thankyou\">Developed by <a href=\"http://yoursite.com\" "
 "target=\"_blank\">Your Site Name</a></span>. Built using <a href=\"http://"
-"themble.com/comrade\" target=\"_blank\">Comrade</a>."
+"themble.com/solidarity\" target=\"_blank\">Solidarity</a>."
 msgstr ""
 "<span id=\"footer-thankyou\">Ontwikkeld door <a href=\"http://yoursite.com\" "
 "target=\"_blank\">Naam Van Jouw Website</a></span>. Gemaakt met <a href="
-"\"http://themble.com/comrade\" target=\"_blank\">Comrade</a>."
+"\"http://themble.com/solidarity\" target=\"_blank\">Solidarity</a>."
 
-#: ../../library/comrade.php:213 ../../library/comrade.php:230
+#: ../../library/solidarity.php:213 ../../library/solidarity.php:230
 msgid "The Main Menu"
 msgstr "Het Hoofd Menu"
 
-#: ../../library/comrade.php:214 ../../library/comrade.php:248
+#: ../../library/solidarity.php:214 ../../library/solidarity.php:248
 msgid "Footer Links"
 msgstr "Voeter Links"
 
-#: ../../library/comrade.php:302
+#: ../../library/solidarity.php:302
 msgid "No Related Posts Yet!"
 msgstr "Nog Geen Gerelateerde Berichten!"
 
-#: ../../library/comrade.php:350
+#: ../../library/solidarity.php:350
 msgid "Read"
 msgstr "Lezen"
 
-#: ../../library/comrade.php:365
+#: ../../library/solidarity.php:365
 #, php-format
 msgid "Posts by %s"
 msgstr "Berichten door %s"

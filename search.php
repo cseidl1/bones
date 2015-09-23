@@ -5,7 +5,7 @@
 				<div id="inner-content" class="wrap cf">
 
 					<main id="main" class="m-all t-2of3 d-5of7 cf" role="main">
-						<h1 class="archive-title"><span><?php _e( 'Search Results for:', 'comradetheme' ); ?></span> <?php echo esc_attr(get_search_query()); ?></h1>
+						<h1 class="archive-title"><span><?php _e( 'Search Results for:', 'solidaritytheme' ); ?></span> <?php echo esc_attr(get_search_query()); ?></h1>
 
 						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -16,7 +16,7 @@
 									<h3 class="search-title entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
 
                   						<p class="byline entry-meta vcard">
-                    							<?php printf( __( 'Posted %1$s by %2$s', 'comradetheme' ),
+                    							<?php printf( __( 'Posted %1$s by %2$s', 'solidaritytheme' ),
                    							    /* the time the post was published */
                    							    '<time class="updated entry-time" datetime="' . get_the_time('Y-m-d') . '" itemprop="datePublished">' . get_the_time(get_option('date_format')) . '</time>',
                       							    /* the author of the post */
@@ -27,17 +27,17 @@
 								</header>
 
 								<section class="entry-content">
-										<?php the_excerpt( '<span class="read-more">' . __( 'Read more &raquo;', 'comradetheme' ) . '</span>' ); ?>
+										<?php the_excerpt( '<span class="read-more">' . __( 'Read more &raquo;', 'solidaritytheme' ) . '</span>' ); ?>
 
 								</section>
 
 								<footer class="article-footer">
 
 									<?php if(get_the_category_list(', ') != ''): ?>
-                  					<?php printf( __( 'Filed under: %1$s', 'comradetheme' ), get_the_category_list(', ') ); ?>
+                  					<?php printf( __( 'Filed under: %1$s', 'solidaritytheme' ), get_the_category_list(', ') ); ?>
                   					<?php endif; ?>
 
-                 					<?php the_tags( '<p class="tags"><span class="tags-title">' . __( 'Tags:', 'comradetheme' ) . '</span> ', ', ', '</p>' ); ?>
+                 					<?php the_tags( '<p class="tags"><span class="tags-title">' . __( 'Tags:', 'solidaritytheme' ) . '</span> ', ', ', '</p>' ); ?>
 
 								</footer> <!-- end article footer -->
 
@@ -45,19 +45,19 @@
 
 						<?php endwhile; ?>
 
-								<?php comrade_page_navi(); ?>
+								<?php solidarity_page_navi(); ?>
 
 							<?php else : ?>
 
 									<article id="post-not-found" class="hentry cf">
 										<header class="article-header">
-											<h1><?php _e( 'Sorry, No Results.', 'comradetheme' ); ?></h1>
+											<h1><?php _e( 'Sorry, No Results.', 'solidaritytheme' ); ?></h1>
 										</header>
 										<section class="entry-content">
-											<p><?php _e( 'Try your search again.', 'comradetheme' ); ?></p>
+											<p><?php _e( 'Try your search again.', 'solidaritytheme' ); ?></p>
 										</section>
 										<footer class="article-footer">
-												<p><?php _e( 'This is the error message in the search.php template.', 'comradetheme' ); ?></p>
+												<p><?php _e( 'This is the error message in the search.php template.', 'solidaritytheme' ); ?></p>
 										</footer>
 									</article>
 
