@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Bones (Rename Me!)\n"
+"Project-Id-Version: Comrade (Rename Me!)\n"
 "POT-Creation-Date: 2015-04-21 09:46+0100\n"
 "PO-Revision-Date: 2015-04-21 10:51+0100\n"
 "Last-Translator: \n"
@@ -113,7 +113,7 @@ msgstr "Les commentaires"
 msgid "Comments are closed."
 msgstr "Les commentaires sont clos."
 
-#: footer.php:9 library/bones.php:215
+#: footer.php:9 library/comrade.php:215
 msgid "Footer Links"
 msgstr "Liens du pied de page"
 
@@ -146,7 +146,7 @@ msgstr "(Editer)"
 msgid "Your comment is awaiting moderation."
 msgstr "Votre commentaire est en attente de modération"
 
-#: header.php:62 library/bones.php:214
+#: header.php:62 library/comrade.php:214
 msgid "The Main Menu"
 msgstr "Le Menu Principal"
 
@@ -179,26 +179,26 @@ msgstr "Récemment sur Themble (Changer dans le fichier admin.php)"
 msgid ""
 "<span id=\"footer-thankyou\">Developed by <a href=\"http://yoursite.com\" "
 "target=\"_blank\">Your Site Name</a></span>. Built using <a href=\"http://"
-"themble.com/bones\" target=\"_blank\">Bones</a>."
+"themble.com/comrade\" target=\"_blank\">Comrade</a>."
 msgstr ""
 "<span id=\"footer-thankyou\">Developpé par <a href=\"http://votresite.com\" "
 "target=\"_blank\">Votre Nom</a></span>. Thème basé sur <a href=\"http://"
-"themble.com/bones\" target=\"_blank\">Bones</a>."
+"themble.com/comrade\" target=\"_blank\">Comrade</a>."
 
-#: library/bones.php:80
+#: library/comrade.php:80
 #, php-format
 msgid "Page %s"
 msgstr "Page %s"
 
-#: library/bones.php:245
+#: library/comrade.php:245
 msgid "No Related Posts Yet!"
 msgstr "Aucun article en rapport"
 
-#: library/bones.php:290
+#: library/comrade.php:290
 msgid "Read "
 msgstr "Lire"
 
-#: library/bones.php:290 search.php:30
+#: library/comrade.php:290 search.php:30
 msgid "Read more &raquo;"
 msgstr "Lire la suite &raquo;"
 
